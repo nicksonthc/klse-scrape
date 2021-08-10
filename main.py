@@ -11,7 +11,7 @@ def scrapePage()-> BeautifulSoup :
     priceTargetUrl = 'https://klse.i3investor.com/jsp/stocks.jsp' # get url
     page = requests.get(priceTargetUrl , headers = headers) # connect to page
     html = page.content # get html content
-    soup = BeautifulSoup(html, parser="html.parser") #beautify the html page
+    soup = BeautifulSoup(html) #beautify the html page
 
     return soup
 
