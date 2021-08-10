@@ -16,16 +16,19 @@ def scrapePage()-> BeautifulSoup :
     return soup
 
 def companyList(soup : BeautifulSoup)-> list :
-    test4 = soup.find_all(id ="tablebody")
-    companies_url = []
+    if soup != None :
+        test4 = soup.find_all(id ="tablebody")
+        companies_url = []
 
-    for company in test4[0].contents :
-        if company != ' ' :
-            url = company.contents[1].contents[0].attrs['href']
-            companies_url.append(url)
+        for company in test4[0].contents :
+            if company != ' ' :
+                url = company.contents[1].contents[0].attrs['href']
+                companies_url.append(url)
 
-    print(companies_url)
-    return companies_url 
+        print(companies_url)
+        return companies_url 
+    else :
+        return None
     
     # resultsTest = soup.find(id='header')
     # results = soup.find('div', attrs={"id": "stockListingTable_wrapper"})
