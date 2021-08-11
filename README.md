@@ -1,3 +1,7 @@
+[![pipeline status](https://gitlab.com/nicksonthc/klse-scrape/badges/master/pipeline.svg)](https://gitlab.com/nicksonthc/klse-scrape/-/commits/master)
+[![coverage report](https://gitlab.com/nicksonthc/klse-scrape/badges/master/coverage.svg)](https://gitlab.com/nicksonthc/klse-scrape/-/commits/master)
+
+
 ## Introduction
 
 This project objective is to acquire Malaysia KLSE bursa stock market's companies list and scraping through to obtain its financial detail by using python web scraping to help in decision making for stock picking.
